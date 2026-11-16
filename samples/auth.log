@@ -1,0 +1,11 @@
+Nov 16 08:12:01 srv01 sshd[1201]: Accepted publickey for alice from 198.51.100.20 port 50122 ssh2
+Nov 16 09:30:10 srv01 sshd[2210]: Failed password for invalid user admin from 203.0.113.5 port 41001 ssh2
+Nov 16 09:30:12 srv01 sshd[2211]: Failed password for invalid user test from 203.0.113.5 port 41002 ssh2
+Nov 16 09:30:14 srv01 sshd[2212]: Failed password for root from 203.0.113.5 port 41003 ssh2
+Nov 16 09:30:16 srv01 sshd[2213]: Failed password for root from 203.0.113.5 port 41004 ssh2
+Nov 16 09:30:18 srv01 sshd[2214]: Failed password for root from 203.0.113.5 port 41005 ssh2
+Nov 16 09:30:20 srv01 sshd[2215]: Failed password for root from 203.0.113.5 port 41006 ssh2
+Nov 16 09:30:23 srv01 sshd[2216]: Accepted password for root from 203.0.113.5 port 41007 ssh2
+Nov 16 09:31:40 srv01 useradd[2300]: new user: name=backdoor, UID=1001, GID=1001, home=/home/backdoor, shell=/bin/bash
+Nov 16 09:35:02 srv01 sudo:    alice : TTY=pts/0 ; PWD=/home/alice ; USER=root ; COMMAND=/bin/bash
+Nov 16 10:02:11 srv01 sshd[2400]: Failed password for bob from 198.51.100.77 port 50999 ssh2

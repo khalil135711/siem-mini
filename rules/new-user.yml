@@ -1,0 +1,6 @@
+id: new-user-created
+title: Neuer lokaler Benutzer angelegt (Persistenz?)
+severity: high
+mitre: [T1136.001]
+type: match
+filter: {action: user_created}

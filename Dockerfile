@@ -1,0 +1,8 @@
+FROM python:3.12-slim
+WORKDIR /app
+COPY pyproject.toml requirements.txt ./
+COPY src ./src
+COPY rules ./rules
+COPY samples ./samples
+RUN pip install --no-cache-dir .
+CMD ["minisiem", "demo"]

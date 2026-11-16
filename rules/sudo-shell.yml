@@ -1,0 +1,6 @@
+id: sudo-shell
+title: Root-Shell via sudo gestartet
+severity: medium
+mitre: [T1548.003]
+type: match
+filter: {action: sudo, cmd: 're:(?i)(/bin/(ba|z)?sh|/bin/su)\b'}

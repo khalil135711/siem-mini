@@ -1,0 +1,9 @@
+id: web-scanner-ua
+title: Bekannter Scanner-User-Agent
+severity: medium
+mitre: [T1595]
+type: threshold
+filter: {action: http_request, ua: 're:(?i)(sqlmap|nikto|nmap|masscan|gobuster|dirbuster)'}
+group_by: src_ip
+threshold: 1
+window: 300

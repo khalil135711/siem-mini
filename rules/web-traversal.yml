@@ -1,0 +1,6 @@
+id: web-path-traversal
+title: Path-Traversal-Versuch
+severity: high
+mitre: [T1190]
+type: match
+filter: {action: http_request, path: 're:(\.\./|%2e%2e%2f)'}

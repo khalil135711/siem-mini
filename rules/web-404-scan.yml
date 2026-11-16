@@ -1,0 +1,9 @@
+id: web-404-scan
+title: Viele 404er von einer IP (Directory-Scan)
+severity: medium
+mitre: [T1595]
+type: threshold
+filter: {action: http_request, status: '404'}
+group_by: src_ip
+threshold: 15
+window: 60

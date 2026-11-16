@@ -1,0 +1,10 @@
+id: ssh-bruteforce-success
+title: Erfolgreicher SSH-Login nach Brute-Force (moegliche Kompromittierung)
+severity: critical
+mitre: [T1110, T1078]
+type: sequence
+first: {action: ssh_login, outcome: failure}
+then: {action: ssh_login, outcome: success}
+group_by: src_ip
+min_count: 5
+window: 300

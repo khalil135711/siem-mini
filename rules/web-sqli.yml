@@ -1,0 +1,6 @@
+id: web-sqli
+title: SQL-Injection-Muster im Request
+severity: high
+mitre: [T1190]
+type: match
+filter: {action: http_request, path: 're:(?i)(union(\+|%20| )+select|(\+|%20| )or(\+|%20| )1(=|%3d)1|sleep\(\d+\))'}

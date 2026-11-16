@@ -1,0 +1,9 @@
+id: ssh-bruteforce
+title: SSH Brute-Force (viele fehlgeschlagene Logins)
+severity: high
+mitre: [T1110]
+type: threshold
+filter: {action: ssh_login, outcome: failure}
+group_by: src_ip
+threshold: 5
+window: 60

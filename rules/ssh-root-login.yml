@@ -1,0 +1,6 @@
+id: ssh-root-login
+title: Remote-Login als root
+severity: medium
+mitre: [T1078]
+type: match
+filter: {action: ssh_login, outcome: success, user: root}
