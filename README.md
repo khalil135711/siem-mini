@@ -1,5 +1,4 @@
-# MiniSIEM
-
+# MiniSIEM:
 Ein kleines, lesbares SIEM in Python: Logs einlesen → in ein einheitliches Schema normalisieren → mit YAML-Regeln (angelehnt an Sigma) auswerten → Alerts mit MITRE-ATT&CK-Mapping als CLI-Ausgabe und HTML-Report.
 
 ![CI](../../actions/workflows/ci.yml/badge.svg)
